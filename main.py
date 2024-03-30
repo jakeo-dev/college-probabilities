@@ -9,7 +9,7 @@ pOne = 1
 for i in range(numColleges):
     accRates.append(float(input("% (0-100) acceptance rate of college #" + str(i + 1) + ": ")) / 100)
 
-print("\n")
+print()
 
 # calculate P(all)
 for acc in accRates:
@@ -23,4 +23,4 @@ print("Probability of getting accepted into NONE of the colleges: " + str(round(
 
 # calculate P(one)
 pOne = 1 - pNone
-print("Probability of getting accepted into ONE of the colleges: " + str(round(pOne * 100, 6)) + "%")
+print("Probability of getting accepted into AT LEAST ONE of the colleges: " + str(round(pOne * 100, 6)) + "%")
